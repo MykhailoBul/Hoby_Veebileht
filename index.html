@@ -4,20 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minu hoby</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="/css/main.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <style>
-      body {
-        margin-top: 200px;
-      }
       header {
         position: fixed;
         top: 0;
@@ -28,7 +20,7 @@
   <header
     class="navbar-expand-md bg-light d-flex justify-content-between align-items-center p-3 w-100 shadow-lg"
   >
-    <h1 class="display-6 p-2">MinuHobi</h1>
+    <h1 class="display-6 p-2 d-flex"><i class="bi bi-palette" style="padding-right: 5px;"></i>MinuHobi</h1>
     <nav class="lead text-end">
       <a href="index.html" class="p-2 text-decoration-none">Avaleht</a>
       <a href="#galerii" class="p-2 text-decoration-none">Galerii</a>
@@ -37,10 +29,11 @@
       <a href="#kontact" class="p-2 text-decoration-none">Kontakt</a>
     </nav>
   </header>
-  <body class="bg-light">
+  <body class="bg-light" style="margin-top: 200px; font-family: Arial, sans-serif;">
     <main>
       <div>
         <div>
+          <img style="background-image: image();" src="" alt="">
           <h1
             class="col-6 d-flex justify-content-center container-fluid lead rounded-pill rounded border border-2 p-3 bg-primary text-white shadow-lg"
           >
@@ -71,7 +64,7 @@
           <div class="d-flex justify-content-between gap-3 container flex-wrap">
             <!-- Cards-->
             <div
-              class="card shadow-lg rounded border border-2 mb-5 bg-light"
+              class="card shadow-lg rounded border border-3 mb-5 bg-danger pb-2"
               style="width: 18rem; margin: auto"
             >
               <div class="card-body">
@@ -82,7 +75,7 @@
               </div>
             </div>
             <div
-              class="card shadow-lg rounded border border-2 mb-5 bg-light"
+              class="card shadow-lg rounded border border-2 mb-5 bg-danger pb-2"
               style="width: 18rem; margin: auto"
             >
               <div class="card-body">
@@ -93,7 +86,7 @@
               </div>
             </div>
             <div
-              class="card shadow-lg rounded border border-2 mb-5 bg-light"
+              class="card shadow-lg rounded border border-2 mb-5 bg-danger pb-2"
               style="width: 18rem; margin: auto"
             >
               <div class="card-body">
@@ -106,33 +99,33 @@
           </div>
         </div>
       </div>
-      <section>
+      <section id="galerii" style="padding-top: 150px;">
         <h2
           class="display-6 container-fluid text-center fs-3 mt-5"
           id="galerii"
         >
           Minu <span class="text-primary">Galerii</span>
         </h2>
-        <p class="container-fluid text-center text-secondary mt-3">
+        <p class="container-fluid text-center text-secondary mt-3 mb-5">
           Tutvu minu loodud 3D-kunsti ja digitaalse disainiga. Iga töö on loodud
           armastuse ja tähelepanuga detailide vastu.
         </p>
         <div class="d-flex flex-column align-items-center gap-3" style="gap: 10px;">
           <div style="gap: 10px;">
-            <img src="Gallery/1.jpg" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
-            <img src="Gallery/Автомат.png" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
-            <img src="Gallery/Герб.png" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/1.jpg" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/Автомат.png" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/Герб.png" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
           </div>
           <div style="gap: 10px;">
-            <img src="Gallery/Револьвер.png" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
-            <img src="Gallery/Сказочный дом.png" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
-            <img src="Gallery/Хомяк.png" alt="" style="width: 700px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/Револьвер.png" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/Сказочный дом.png" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
+            <img src="Gallery/Хомяк.png" alt="" style="width: 600px; height: 400px; object-fit: cover;" />
           </div>
         </div>
         </div>
       </section>
-      <section id="alustada">
-        <h2 class="display-6 container-fluid text-center fs-3 mt-5">
+      <section id="alustada" style="padding-top: 150px;">
+        <h2 class="display-6 container-fluid text-center fs-3">
           <span class="text-primary">Kuidas</span> Alustada
         </h2>
         <p class="container-fluid text-center text-secondary mt-3">
@@ -140,7 +133,7 @@
           digitaalse disaini maailmas.
         </p>
         <div
-          class="d-flex justify-content-center gap-5 container-fluid flex-wrap"
+          class="d-flex justify-content-center gap-5 container-fluid flex-wrap mt-5"
         >
           <!-- Cards alustamine-->
           <div id="1poll">
@@ -246,7 +239,7 @@
         </div>
       </section>
       <section id="saavutused">
-        <h5 class="display-6 container-fluid text-center fs-3 mt-5">
+        <h5 class="display-6 container-fluid text-center fs-3" style="padding-top: 150px;">
           Minu <span class="text-primary">Saavutused</span>
         </h5>
         <div
@@ -256,7 +249,7 @@
             class="col-6 shadow-lg rounded border border-2 mb-5 bg-light p-4 m-4"
             style="width: 14rem; height: 7rem; margin: auto"
           >
-            <p class="text-primary">10+</p>
+            <p class="text-primary">5+</p>
             <p>Iseseisvad projekti</p>
           </div>
           <div
@@ -282,9 +275,9 @@
           </div>
         </div>
       </section>
-      <section id="kontakt">
+      <section id="kontact" style="padding-top: 150px;">
         <h2
-          class="display-6 container-fluid text-center fs-3 mt-5 text-primary"
+          class="display-6 container-fluid text-center fs-3 text-primary"
         >
           Kontakt
         </h2>
@@ -292,19 +285,22 @@
           Võta minuga ühendust, kui soovid rohkem teada minu tööde või
           koostöövõimaluste kohta.
         </p>
-        <div class="d-flex justify-content-between gap-3 container flex-wrap">
-          <div>
-            <h5 class="text-start pb-3 pt-5">Kontaktinfo</h5>
-            <div class="align-items-between d-flex flex-column gap-5">
+        <div class="d-flex justify-content-between gap-3 container pt-5 flex-wrap">
+          <div style="font-size: 20px;">
+            <h5 class="text-start pb-3 pt-5 mx-2">Kontaktinfo</h5>
+            <div class="align-items-between d-flex flex-column gap-5 p-2">
               <div>
+                <i class="bi bi-envelope"></i>
                 <label class="text-secondary">Email</label>
                 <p>mykhailo.bulava@voco.ee</p>
               </div>
               <div>
+                <i class="bi bi-telephone"></i>
                 <label class="text-secondary">Telefon</label>
                 <p>+372 3452 8567</p>
               </div>
               <div>
+                <i class="bi bi-geo-alt"></i>
                 <label class="text-secondary">Asukoht</label>
                 <p>Tartu, Eesti</p>
               </div>
@@ -347,7 +343,7 @@
                   placeholder="Kirjuta oma sõnum siia..."
                 ></textarea>
                 <button
-                  class="rounded border btn btn-primary text-center mt-5 mb-5 shadow-lg"
+                  class="rounded border btn btn-primary text-center mt-5 mb-5 shadow-lg w-100"
                 >
                   Saada sõnum <i class="bi bi-envelope-fill"></i>
                 </button>
@@ -357,84 +353,43 @@
         </div>
       </section>
     </main>
-    <footer class="bg-light text-center p-3 mt-4 border-top">
-      <div>
-        <div class="mb-3">
-          <h2>Kiirlingid</h2>
-          <a href="index.html" class="p-2 text-decoration-none text-secondary"
-            >Avaleht</a
-          >
-          <a href="#galerii" class="p-2 text-decoration-none text-secondary"
-            >Galerii</a
-          >
-          <a href="#alustada" class="p-2 text-decoration-none text-secondary"
-            >Kuidas alustada</a
-          >
-          <a href="#saavutused" class="p-2 text-decoration-none text-secondary"
-            >Saavutused</a
-          >
-          <a href="#kontact" class="p-2 text-decoration-none text-secondary"
-            >Kontakt</a
-          >
+    <footer class="bg-white border-top mt-5 py-5 px-4">
+      <div class="container">
+        <div class="d-flex justify-content-between row text-start">
+          <!-- Left Column -->
+          <div class="col-md-4 mb-4" style="font-size: 18px;">
+            <h4 class="fw-semibold mb-3">Kiirlingid</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-secondary text-decoration-none d-block mb-2">Avaleht</a></li>
+              <li><a href="#galerii" class="text-secondary text-decoration-none d-block mb-2">Galerii</a></li>
+              <li><a href="#alustada" class="text-secondary text-decoration-none d-block mb-2">Kuidas alustada</a></li>
+              <li><a href="#saavutused" class="text-secondary text-decoration-none d-block mb-2">Saavutused</a></li>
+              <li><a href="#kontakt" class="text-secondary text-decoration-none d-block">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-4 mb-4">
+            <span class="btn-light text-dark rounded border text-center mt-4 mb-5 p-2" > Jälgi mind sotsiaalmeedias <i class="bi bi-heart-fill"></i> </span>
+            <div class="d-flex align-items-center gap-3 fs-4 mb-3 mt-3"> 
+              <i class="bi bi-facebook" style=" background-color: rgb(255, 255, 255); border: 1px solid black; border-radius: 30%; padding: 5px; box-shadow: 2px 2px 5px grey; width: 45px; " ></i>
+              <i class="bi bi-instagram" style=" background-color: rgb(255, 255, 255); border: 1px solid black; border-radius: 30%; padding: 5px; box-shadow: 2px 2px 5px grey; width: 45px; " ></i> 
+              <i class="bi bi-send" style=" background-color: rgb(255, 255, 255); border: 1px solid black; border-radius: 30%; padding: 5px; box-shadow: 2px 2px 5px grey; width: 45px; " ></i> 
+              <i class="bi bi-github" style=" background-color: rgb(255, 255, 255); border: 1px solid black; border-radius: 30%; padding: 5px; box-shadow: 2px 2px 5px grey; width: 45px; " ></i> 
+            </div>
+            <p class="mb-0 text-secondary">
+              <i class="bi bi-envelope"></i> info@minuhobi.ee
+            </p>
+          </div>
         </div>
-        <span
-          class="btn-light text-dark rounded border text-center mt-4 mb-5 p-2"
-        >
-          Jälgi mind sotsiaalmeedias <i class="bi bi-heart-fill"></i>
-        </span>
-        <div class="d-flex justify-content-center gap-4 fs-4 mb-3 mt-3">
-          <i
-            class="bi bi-facebook"
-            style="
-              background-color: rgb(255, 255, 255);
-              border: 1px solid black;
-              border-radius: 30%;
-              padding: 5px;
-              box-shadow: 2px 2px 5px grey;
-              width: 45px;
-            "
-          ></i>
-          <i
-            class="bi bi-instagram"
-            style="
-              background-color: rgb(255, 255, 255);
-              border: 1px solid black;
-              border-radius: 30%;
-              padding: 5px;
-              box-shadow: 2px 2px 5px grey;
-              width: 45px;
-            "
-          ></i>
-          <i
-            class="bi bi-send"
-            style="
-              background-color: rgb(255, 255, 255);
-              border: 1px solid black;
-              border-radius: 30%;
-              padding: 5px;
-              box-shadow: 2px 2px 5px grey;
-              width: 45px;
-            "
-          ></i>
-          <i
-            class="bi bi-linkedin"
-            style="
-              background-color: rgb(255, 255, 255);
-              border: 1px solid black;
-              border-radius: 30%;
-              padding: 5px;
-              box-shadow: 2px 2px 5px grey;
-              width: 45px;
-            "
-          ></i>
-        </div>
-        <p><i class="bi bi-envelope-fill"></i> mykhailo.bulava@voco.ee</p>
-      </div>
-      <div class="d-flex justify-content-between border-top">
-        &copy; 2024 MinuHobi. Kõik õigused kaitstud.
-        <div class="d-flex gap-3">
-          <p>Privaatsuspoliitika</p>
-          <p>Kasutustingimused</p>
+
+        <hr class="my-4" />
+        <div class="d-flex flex-column flex-md-row justify-content-between text-secondary small">
+          <p class="mb-2 mb-md-0">© 2025 MinuHobi. Kõik õigused kaitstud.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-secondary text-decoration-none">Privaatsuspoliitika</a>
+            <a href="#" class="text-secondary text-decoration-none">Kasutustingimused</a>
+          </div>
         </div>
       </div>
     </footer>
